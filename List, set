@@ -1,0 +1,4 @@
+The list implementation allows us to add the same or duplicate elements.	The set implementation doesn't allow us to add the same or duplicate elements.
+2.	The insertion order is maintained by the List.	It doesn't maintain the insertion order of elements.
+3.	List allows us to add any number of null values.	Set allows us to add at least one null value in it.
+4.	The List implementation classes are LinkedList and ArrayList.	The Set implementation classes are TreeSet, HashSet and LinkedHashSet.
