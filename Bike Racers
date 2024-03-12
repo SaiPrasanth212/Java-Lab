@@ -1,0 +1,46 @@
+import java.util.Scanner;
+class Bikerace {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int speed[] = new int[5];
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.println("Enter the speed of racer -" + i + ":");
+            speed[i] = sc.nextInt();
+        }
+        int sum = 0;
+        for(int i=0; i < 5; i++)
+        {
+            sum += speed[i];
+        }
+        double avg = sum/5;
+        System.out.println("the speed of qualifying racers is: ");
+        for( int i=0; i <5 ; i++)
+        {
+            if(speed[i]>= avg){
+                System.out.println("\n racer" + i + ":" + speed[i]);
+            }
+        }
+        }
+    }
+
+
+OUTPUT :-
+
+Enter the speed of racer -0:
+50
+Enter the speed of racer -1:
+60
+Enter the speed of racer -2:
+70
+Enter the speed of racer -3:
+80
+Enter the speed of racer -4:
+90
+the speed of qualifying racers is: 
+
+ racer2:70
+
+ racer3:80
+
+ racer4:90
