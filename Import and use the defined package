@@ -1,0 +1,25 @@
+class Animal{
+void eat(){System.out.println("eating...");}
+}
+class Dog extends Animal{
+void bark(){System.out.println("barking...");}
+}
+class BabyDog extends Dog{
+void weep(){System.out.println("weeping...");}
+}
+class TestInheritance2{
+public static void main(String args[]){
+BabyDog d=new BabyDog();
+d.weep();
+d.bark();
+d.eat();
+}}
+
+To import and use the above Java package, assuming the code is saved in a file named TestInheritance2.java located in the package com.example, you can use the following code in a separate Java file:
+import com.example.TestInheritance2;
+
+public class Main {
+    public static void main(String[] args) {
+        TestInheritance2.main(args);
+    }
+}
