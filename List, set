@@ -2,3 +2,42 @@ The list implementation allows us to add the same or duplicate elements.	The set
 2.	The insertion order is maintained by the List.	It doesn't maintain the insertion order of elements.
 3.	List allows us to add any number of null values.	Set allows us to add at least one null value in it.
 4.	The List implementation classes are LinkedList and ArrayList.	The Set implementation classes are TreeSet, HashSet and LinkedHashSet.
+
+import java.util.*;    
+class ListExample{    
+    public static void main(String args[]){    
+    //Create List    
+    List<String> names = new ArrayList<String>();    
+    //Adding elements in the List.   
+    names.add("Emma");    
+    names.add("Adele");    
+    names.add("Aria");    
+    names.add("Ally");    
+    //Performing iteration of list to print each element of it.   
+    for(String name: names)    
+        System.out.println(name);    
+    }    
+} 
+Emma
+Adele
+Aria
+Ally
+
+import java.util.*;     
+public class SetExample{     
+    public static void main(String[] args)     
+    {     
+        // creating HashSet implementation using the Set    
+        Set<String> veg = new HashSet<String>();     
+      
+        veg.add("Ginger");     
+        veg.add("Garlic");     
+        veg.add("Onion");     
+        veg.add("Ginger");     
+      
+        System.out.println(veg);     
+    }     
+}    
+
+O/P:=
+[Onion, Garlic, Ginger]
