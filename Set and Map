@@ -1,0 +1,49 @@
+import java.util.*;     
+public class SetExample{     
+    public static void main(String[] args)     
+    {     
+        // creating LinkedHashSet implementation using the Set    
+        Set<String> marvel_movies = new LinkedHashSet<String>();     
+      
+        marvel_movies.add("Captain Marvel");     
+        marvel_movies.add("Thor: Ragnarok");     
+        marvel_movies.add("Captain America: The Winter Soldier");     
+        marvel_movies.add("Ant-Man and the Wasp");     
+      
+        System.out.println(marvel_movies);     
+    }     
+}  
+
+O/P:-
+[Captain Marvel, Thor: Ragnarok, Captain America: The Winter Soldier, Ant-Man and the Wasp]
+
+------------------------------------------------------------------------------------------------------
+
+import java.util.LinkedHashMap;   
+public class MapExample {      
+    public static void main(String[] args)   
+    {   
+        // Creating an empty Linked Hash Map  
+        LinkedHashMap<Integer, String> students = new LinkedHashMap<>();   
+        // Adding data to Linked Hash Map in key-value pair    
+        students.put(101, "Aaliyah");   
+        students.put(102, "Taylor");   
+        students.put(103, "Zayn");  
+        students.put(104, "Sabrina");  
+        students.put(105, "Paul");  
+        // Showing size and data of the Linked Hash Map  
+        System.out.println("The size of the Linked Hash Map is:- "+ students.size());   
+        System.out.println(students);     
+        // Checking whether a certaint key is available or not  
+        if (students.containsKey(105)) {   
+            String name = students.get(105);   
+            System.out.println("The name of the student having Id 105 is:- " + name);   
+        }   
+    }   
+}  
+
+
+O/P:-
+The size of the Linked Hash Map is:- 5
+{101=Aaliyah, 102=Taylor, 103=Zayn, 104=Sabrina, 105=Paul}
+The name of the student having Id 105 is:- Paul
