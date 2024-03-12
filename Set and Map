@@ -47,3 +47,13 @@ O/P:-
 The size of the Linked Hash Map is:- 5
 {101=Aaliyah, 102=Taylor, 103=Zayn, 104=Sabrina, 105=Paul}
 The name of the student having Id 105 is:- Paul
+
+
+1.  Set is used to construct the mathematical Set in Java.
+    Map is used to do mapping in the database.
+2.	It cannot contain repeated values.
+	It can have the same value for different keys.
+3.	Set doesn't allow us to add the same elements in it. Each class that implements the Set interface contains only the unique value.
+    Map contains unique key and repeated values. In Map, one or more keys can have the same values, but two keys cannot be the same.
+4.	We can easily iterate the Set elements using the keyset() and the entryset() method of it.	
+    Map elements cannot be iterated. We need to convert Map into Set for iterating the elements.
